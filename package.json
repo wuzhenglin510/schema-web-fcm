@@ -1,6 +1,6 @@
 {
   "name": "schema-web-fcm",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "schema-web frequence controll manage middleware based on memcached, like filter in javaweb. it aim at controlling the frequence of some url.",
   "main": "index.js",
   "scripts": {

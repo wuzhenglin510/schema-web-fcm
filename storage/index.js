@@ -22,7 +22,6 @@ module.exports = class Storage {
                     return ;
                 }
                 if (!data) { resolve(0); return ;}
-                console.log(`storage-get data: ${JSON.stringify(data)}`);
                 if (data.unfreezeTime) { //如果已经被冻住，检查是否需要解冻
                     if (currentTime > data.unfreezeTime) {
                         delete(data.unfreezeTime);

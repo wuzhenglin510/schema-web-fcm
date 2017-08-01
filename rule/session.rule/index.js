@@ -10,7 +10,6 @@ module.exports = class SessionRule{
         let sessionId = this.extractSessionId(req);
         if (sessionId != '') {
             let key = `${sessionId}_${req.api.name}`;
-            console.log(key);
             let count = await storage.get(key);
             if (count < 0) { //已被冻住
                     throw new Error(`SessionId频率限制, SessionId: ${sessionId}, 请求接口: ${req.api.name}`);

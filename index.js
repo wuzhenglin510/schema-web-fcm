@@ -11,7 +11,6 @@ class FCMMiddleware {
     async handle(req, res, next) {
         for (let patternRules of this.patternRulesList) {
             let pattern = new RegExp(patternRules.pattern);
-            console.log(pattern.test(req.api.name));
             if (pattern.test(req.api.name)) {
                 for (let rule of patternRules.rules) {
                     try {
