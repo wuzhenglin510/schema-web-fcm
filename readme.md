@@ -11,7 +11,7 @@ Using this plugin, you can easily to manage the frequency of any pattern url of 
 ## Terminology
 
 - Gun Shooting Model : In a gun battle game, the gatlin has two status, one is normal status, the other is over hot. For example, the gatlin can shoot 30 times in 10s, if you shoot less than 30 in 10s, you can shoot all the time, but if you over 30 times, the gun will change normal status into over hot which it can`t not shoot between 20s in the future. After 20s, the status will go back to normal, and you could shoot again, but how many times you can shoot, dependence on your shooting history.
-- Rule : Rule is the real worker for the limit task. Rule`s do method will check the limit condition, if the shooting times over the limit, Rule will set the status from normal to over hot. And in next time with status still is over hot, Rule will thorw Error, as a result of client call the api, client get 500.
+- Rule : Rule is the real worker for the limit task. Rule`s do method will check the limit condition, if the shooting times over the limit, Rule will set the status from normal to over hot. And in next time with status still is over hot, Rule will throw Error, as a result of client call the api, client get 500.
 
 ## Installation
 
