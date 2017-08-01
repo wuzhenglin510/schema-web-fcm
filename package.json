@@ -1,0 +1,22 @@
+{
+  "name": "schema-web-fcm",
+  "version": "1.0.0",
+  "description": "schema-web frequence controll manage middleware, like filter in javaweb. it aim at controlling the frequence of some url.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "fcm",
+    "schema-web"
+  ],
+  "author": "leo",
+  "license": "ISC",
+  "dependencies": {
+    "memcached": "^2.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:wuzhenglin510/schema-web-fcm.git"
+  }
+}
