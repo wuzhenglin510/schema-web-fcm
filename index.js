@@ -1,12 +1,11 @@
 const Storage = require('./storage');
 
-module.exports = class FCMMiddleware{
+class FCMMiddleware {
     constructor(pattern, patternRulesList, storageConfig) {
         this.pattern = pattern;
         this.patternRulesList = patternRulesList;
         this.storage = new Storage(storageConfig);
     }
-
 
 
     async handle(req, res, next) {
@@ -29,4 +28,9 @@ module.exports = class FCMMiddleware{
         }
         next();
     }
+}
+
+module.exports = {
+    FCMMiddleware: FCMMiddleware,
+    Rule: require('./rule')
 };
