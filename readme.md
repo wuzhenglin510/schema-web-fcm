@@ -3,6 +3,7 @@
 This is a frequence control manage plugin of schema-web, like filter in javaweb.
 
 Using this plugin, you can easily to manage the frequency of any pattern url of your application. For example, if you hold an lottery application, you would like to set a limitation at api interface named 'lottery.apply' which some bad guy would call it using curl more than 100000 times in a minute. This module just implement two rule, based on ip or sessionId.
+If memcached service is down, the middleware will not work, api still fine.
 
 ## Dependence
 
